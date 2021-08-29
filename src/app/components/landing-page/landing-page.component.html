@@ -1,0 +1,42 @@
+<div class="ipl-cover-pic">
+  <img src="../../../assets/images/IplCover.jpg" width="100%" height="500px" />
+</div>
+<div style="text-align: center; font-size: 30px; padding: 15px">
+  Start Designing your team right now... 
+</div>
+<div class="container">
+<div class="col-sm-12   ipl-schedule">
+  <div *ngFor="let match of iplSchedule">
+    <h3 class="match-no"> Match {{match.match_no}} </h3>
+    <div class="match-details">
+      <div class="team-images">
+        <div class="team-logo {{match.team1_id}}"></div>
+        <div class="team-vs">V</div> 
+        <div class="team-logo {{match.team2_id}}"></div>
+      </div>
+      <div class="team-names">
+        {{match.team1_name}} <br/>
+        {{match.team2_name}}
+      </div>
+      <div class="match-date">
+          {{match.match_date_time | date: 'EEEE, MMMM d, y' }}
+      </div>
+      <div class="design-team">
+          <button class="btn btn-primary" [routerLink]="['/home', { t1:match.team1_id,t2:match.team2_id }]" > Design Team </button>
+      </div>
+    </div>
+  </div>
+  <div class="page-visit-counter">
+    <div class="page-visit-label">
+      Total Visitors
+    </div>
+    <a href="https://smallseotools.com/visitor-hit-counter/" target="_blank" title="Visitor Hit Counter">
+      <img src="https://smallseotools.com/counterDisplay?code=9d3c166e6b26d27df39d985f02c89974&style=0005&pad=6&type=page&initCount=100000"  title="Visitor Hit Counter" Alt="Visitor Hit Counter" border="0">
+      </a>
+  </div>
+
+  
+  
+</div>
+</div>
+

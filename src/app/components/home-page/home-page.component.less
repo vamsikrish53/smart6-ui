@@ -1,0 +1,195 @@
+.switch-teams-dropdown{
+    float: right;
+}
+.wk-players, .bat-players, .ar-players, .bowl-players {
+    display: flex;
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.wk-players .player, .bat-players .player, .ar-players .player, .bowl-players .player {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.wk-players,.bat-players,.ar-players,.bowl-players {
+    .player-name {
+        flex: 1 65px;
+        font-weight: bold;
+    }
+}
+.nav-tabs >li {
+    width: 25%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.nav-tabs >li.active a{
+    border: 0;
+    background-color: #2f4050;
+    color: white;
+    border-radius: 8px;
+}
+.wkDisabled, .batDisabled, .arDisabled, .bowlDisabled, .playerDisabled, .teamPlayerDisabled{
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.selected-wks, .selected-bats, .selected-ars, .selected-bowls {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80px;
+}
+
+.team1-preview-pane, .team2-preview-pane, .team3-preview-pane, .team4-preview-pane, .team5-preview-pane, .team6-preview-pane {
+    height: 450px;
+    padding: 0;
+    margin-top: 10px;
+    box-shadow: 0 3px 6px 2px rgba(0, 0, 0, 0.25);
+} 
+
+.wk-label, .bat-label, .ar-label, .bowl-label {
+    text-align: center;
+}
+.selected-wk-player, .selected-bat-player, .selected-ar-player, .selected-bat-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wk-section, .bat-section, .ar-section, .bowl-section {
+    margin-top: 10px;
+}
+/* Left Menu Styles */
+.match-header {
+    height: 70px;
+    color: white;
+    background-color: #2f4050;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 70px;
+    font-weight: 600;
+}
+.match-sub-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 8px;
+    height: 100px;
+    border-bottom: 2px solid #2f4050;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.players-selected {
+    display: flex;
+    flex-direction: column;
+}
+.team-images {
+    display: flex;
+}
+.team-images .team-name {
+    display: flex;
+    flex-direction: column;
+}
+.team-images .team-selected-count {
+    display: flex;
+    flex-direction: column;
+}
+.credits-available {
+    display: flex;
+    flex-direction: column;
+}
+.team-selected-count, .players-selected-count, .remaining-credits {
+    text-align: center;
+}
+.swith-teams-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 14px;
+ }
+
+ .swith-teams-section .switch-team-label {
+    align-items: center;
+    display: flex;
+    margin-left: 10px;
+  }
+  .captian-vc-selection {
+      margin-left: 10px;
+      margin-bottom: 25px;
+  }
+ .player-heading-row {
+     display: flex;
+     flex-direction: row;
+     margin: 10px;
+     font-size: 15px;
+     border-bottom: 1px solid #e8e8e8;
+     font-weight: bold;
+
+ }
+ .players-list-section {
+     margin-left: 10px;
+     box-shadow: 0 3px 6px 2px rgba(0, 0, 0, 0.25);
+     padding: 8px
+ }
+ .player-add-icon {
+     font-size: 18px;
+     color: black;
+     cursor: pointer;
+ }
+ .player-delete-icon {
+    font-size: 18px;
+    color: red;
+    cursor: pointer;
+}
+.player-chooser-criteria {
+    margin: 20px;
+    div{
+        margin: 10px;
+    }
+}
+.player-icon {
+    position: relative;
+    top: 5px;
+}
+.team-no {
+    float: left;
+    position: relative;
+    left: -20px;
+    background-color: #676a6c;
+    color: white;
+    top: 10px;
+    padding: 5px;
+    font-weight: 900;
+    width: 120px;
+    transform: rotate(-30deg);
+}
+.wk-label-align {
+    position: relative;
+    top: 10px;
+    left: -60px;
+}
+.teams-pane.player-name {
+    background-color: #282828;
+    color: #fff;
+    padding: 0 4px;
+    border-radius: 3px;
+    width: 65px;
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+}
+.player-role .captian-icon {
+    position: relative;
+    top: 10px;
+    left: 15px;
+    width: 18px;
+    height: 18px;
+    background-color : green;
+}
